@@ -20,3 +20,6 @@ function attivaBottone() {
     bottone.textContent = "Accendi";
 }; 
 }
+
+//Output finale ( invocazione della funzione su id bottone)
+bottone.addEventListener("click", attivaBottone);
