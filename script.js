@@ -1,25 +1,25 @@
+
 //Variabili che richiamano gli elementi HTML
-const lampadina = document.getElementById("lampadina");
-const bottone = document.getElementById("bottone");
+const lampadinaEl = document.getElementById("lampadina");
+const bottoneEl = document.getElementById("bottone");
 
 //Creazione della funzione callback su id bottone
-bottone.addEventListener("click", function() {});
-
+bottoneEl.addEventListener("click", function() {});
 
 //Dichiarazione della funzione da utilizzare come callback
 function attivaBottone() {
-  if (lampadina.src.includes("white_lamp.png")) {
-    lampadina.src = "img/yellow_lamp.png"; 
-  } if (lampadina.src.includes("yellow_lamp.png")) {
-    lampadina.src = "img/white_lamp.png"; 
-  }
 
-  if (bottone.textContent.includes("Accendi")) {
-    bottone.textContent = "Spegni";
-  } else if (bottone.textContent.includes("Spegni")) {
-    bottone.textContent = "Accendi";
-}; 
+  if (lampadinaEl.src.includes("white_lamp.png")) {lampadinaEl.src = "img/yellow_lamp.png";} 
+
+  else if (lampadinaEl.src.includes("yellow_lamp.png")) {lampadinaEl.src = "img/white_lamp.png";}
+
+  if (bottoneEl.textContent.includes("Accendi")) {bottoneEl.textContent = "Spegni";} 
+
+  else if (bottoneEl.textContent.includes("Spegni")) {bottoneEl.textContent = "Accendi";} 
+
 }
 
+
+
 //Output finale ( invocazione della funzione su id bottone)
-bottone.addEventListener("click", attivaBottone);
+bottoneEl.addEventListener("click", attivaBottone);
