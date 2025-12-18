@@ -17,9 +17,9 @@ function attivaBottone() {
 
   else if (bottoneEl.textContent.includes("Spegni")) {bottoneEl.textContent = "Accendi";} 
 
-  if (bottoneEl.classList.includes("btn-secondary")) {bottoneEl.classList.remove("btn-secondary"); bottoneEl.classList.add("btn-danger");} 
+  if (bottoneEl.classList.contains("btn-info")) {bottoneEl.classList.remove("btn-info"); bottoneEl.classList.add("btn-warning");} 
 
-  else if (bottoneEl.classList.includes("btn-danger")) {bottoneEl.classList.remove("btn-danger"); bottoneEl.classList.add("btn-secondary");}
+  else if (bottoneEl.classList.contains("btn-warning")) {bottoneEl.classList.remove("btn-warning"); bottoneEl.classList.add("btn-info");}
 
 }
 
