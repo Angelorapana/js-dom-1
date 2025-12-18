@@ -17,6 +17,10 @@ function attivaBottone() {
 
   else if (bottoneEl.textContent.includes("Spegni")) {bottoneEl.textContent = "Accendi";} 
 
+  if (bottoneEl.classList.includes("btn-secondary")) {bottoneEl.classList.remove("btn-secondary"); bottoneEl.classList.add("btn-danger");} 
+
+  else if (bottoneEl.classList.includes("btn-danger")) {bottoneEl.classList.remove("btn-danger"); bottoneEl.classList.add("btn-secondary");}
+
 }
 
 
